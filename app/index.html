@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f6f5f0">
+<meta name="description" content="Avora — a thoughtful way to find care and manage appointments."><title>Avora — Healthcare, within reach</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <div class="brand"><div class="brand-icon" aria-hidden="true"><span></span><span></span></div><span>avora<span class="brand-dot">.</span></span></div>
+    <div class="workspace-label">YOUR SPACE</div>
+    <nav class="side-nav">
+      <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span>Overview</button>
+      <button class="nav-item" data-view="find"><span class="nav-icon">⌕</span>Find care</button>
+      <button class="nav-item" data-view="appointments"><span class="nav-icon">▦</span>Appointments <span id="navAppointmentCount" class="nav-count">0</span></button>
+      <button class="nav-item" data-view="records"><span class="nav-icon">▤</span>My health notes</button>
+    </nav>
+    <div class="workspace-label support-label">SUPPORT</div>
+    <nav class="side-nav"><button class="nav-item" data-view="help"><span class="nav-icon">ⓘ</span>Help & support</button></nav>
+    <div class="sidebar-bottom"><div class="care-note"><span class="care-note-icon">✳</span><strong>Care made simpler.</strong><p>Good care starts with feeling understood.</p></div><div class="profile"><div class="avatar">AA</div><div><strong>Alex Asante</strong><small>Demo patient account</small></div><span class="profile-dots">···</span></div></div>
+  </aside>
+  <div class="main-shell">
+    <header class="topbar"><div class="topbar-left"><button class="mobile-menu" id="menuBtn" aria-label="Open menu">☰</button><span class="breadcrumb">Your health, in one place</span></div><div class="topbar-right"><span class="availability"><span class="pulse-dot"></span> Support available</span><button class="icon-btn" id="notificationBtn" aria-label="Notifications">♧<span class="notification-pip"></span></button><span class="header-avatar">AD</span></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer"><span>© 2026 Avora · Built as a demonstration</span><span>Care with clarity, every step of the way.</span></footer>
+  </div>
+</div>
+<div id="modalRoot"></div>
+<script src="app.js" defer></script>
+</body></html>

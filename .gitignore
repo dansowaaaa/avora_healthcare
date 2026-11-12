@@ -1,0 +1,25 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfplan
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Variable files may hold environment-specific values (the example file is kept)
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+
+# Secrets and local files
+.env
+*.pem
+*.key
+.aws/
+.DS_Store
+*.pkg
+*.save
